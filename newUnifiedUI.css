@@ -1,4 +1,5 @@
 :root{
+    --scroll_box_height: 800px;
     --button_text_size: 15px;
     --background_color: #1f1f1f;
     --background_color_darker: #181818;
@@ -69,7 +70,7 @@ body{
     border-color: var(--blue_border_lighter);
 }
 .scroll-box{
-    height: 700px;
+    height: var(--scroll_box_height);
     width: auto;
     overflow-y: auto;
 }
@@ -167,4 +168,7 @@ body{
 .button-link{
     color: white;
     text-decoration: none;
+}
+.link{
+    color: dodgerblue;
 }
