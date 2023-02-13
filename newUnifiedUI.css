@@ -1,0 +1,170 @@
+:root{
+    --button_text_size: 15px;
+    --background_color: #1f1f1f;
+    --background_color_darker: #181818;
+    --background_color_lighter: #4a4949;
+    --content_box_bg: #323232;
+    --background_color_blue: #004484;
+    --background_color_blue_lighter: #a6d4ff;
+    --content_box_border_color: #2c2c2c;
+    --blue_border_darker: #00274b;
+    --blue_border_lighter: #005bb1;
+    --blue: #0970d7;
+    --blue_darker: #1a52a7;
+    --green: #09b70f;
+    --green_darker: #077a0b;
+    --red: #d70909;
+    --red_darker: #5e0505;
+    --gray: #2f2f2f;
+    --gray_darker: #212121;
+}
+
+body{
+    color:white;
+    margin: 0px;
+    padding: 0px;
+    background-color: var(--background_color);
+    font-family: Microsoft Yahei, Arial, Helvetica, sans-serif;
+}
+.header-box{
+    background-color: var(--background_color_lighter);
+    color: white;
+    padding: 15px;
+    font-size: 30px;
+    font-weight: bolder;
+}
+.content-box{
+    margin: 10px;
+    padding: 5px;
+    background-color: rgba(0,0,0,0);
+    border-radius: 5px;
+    border: 3px;
+    border-color: var(--content_box_border_color);
+    border-style: solid;
+    transition: background-color 0.5s;
+}
+.content-box:hover{
+    background-color: var(--content_box_bg);
+}
+.content-box .content-box-middle{
+    text-align: center;
+}
+.tip-box{
+    border-radius: 5px;
+    border-color: var(--blue_border_darker);
+    border-style: solid;
+    margin: 5px;
+    padding: 5px;
+    width: auto;
+    height: fit-content;
+    background-color: var(--background_color_blue);
+    color: white;
+    transition: background-color 0.5s;
+    transition: color 0.5s;
+    transition: border-color 0.5s;
+}
+.content-box:hover .tip-box{
+    background-color: var(--background_color_blue_lighter);
+    color: var(--background_color_blue);
+    border-color: var(--blue_border_lighter);
+}
+.scroll-box{
+    height: 700px;
+    width: auto;
+    overflow-y: auto;
+}
+.parallel-box{
+    display:inline-block;
+    width: fit-content;
+    height: fit-content;
+    margin: 5px;
+}
+
+.blue-button{
+    display: inline-block;
+    border:1.5px;
+    border-radius: 5px;
+    border-style: solid;
+    border-color: var(--blue_darker);
+    background-color: var(--blue);
+    color: white;
+    font-weight: bold;
+    text-align: center;
+    margin: 5px;
+    padding: 5px;
+    width: fit-content;
+    height: fit-content;
+    transition: background-color 0.5s;
+    cursor: pointer;
+    font-size: var(--button_text_size);
+}
+.blue-button:hover{
+    background-color: var(--blue_darker);
+}
+.green-button{
+    display: inline-block;
+    border:1.5px;
+    border-radius: 5px;
+    border-style: solid;
+    border-color: var(--green_darker);
+    background-color: var(--green);
+    color: white;
+    font-weight: bold;
+    text-align: center;
+    margin: 5px;
+    padding: 5px;
+    width: fit-content;
+    height: fit-content;
+    transition: background-color 0.5s;
+    cursor: pointer;
+    font-size: var(--button_text_size);
+}
+.green-button:hover{
+    background-color: var(--green_darker);
+}
+.red-button{
+    display: inline-block;
+    border:1.5px;
+    border-radius: 5px;
+    border-style: solid;
+    border-color: var(--red_darker);
+    background-color: var(--red);
+    color: white;
+    font-weight: bold;
+    text-align: center;
+    margin: 5px;
+    padding: 5px;
+    width: fit-content;
+    height: fit-content;
+    transition: background-color 0.5s;
+    cursor: pointer;
+    font-size: var(--button_text_size);
+}
+.red-button:hover{
+    background-color: var(--red_darker);
+}
+.gray-button{
+    display: inline-block;
+    border:1.5px;
+    border-radius: 5px;
+    border-style: solid;
+    border-color: var(--gray_darker);
+    background-color: var(--gray);
+    color: white;
+    font-weight: bold;
+    text-align: center;
+    margin: 5px;
+    padding: 5px;
+    width: fit-content;
+    height: fit-content;
+    transition: background-color 0.5s;
+    cursor: pointer;
+    font-size: var(--button_text_size);
+}
+.gray-button:hover{
+    background-color: var(--gray_darker);
+}
+.button-link{
+    color: white;
+    text-decoration: none;
+}
