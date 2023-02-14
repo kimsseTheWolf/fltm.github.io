@@ -18,6 +18,11 @@
     --red_darker: #5e0505;
     --gray: #2f2f2f;
     --gray_darker: #212121;
+    --command_block_bg: #3e3e3e;
+}
+@font-face {
+    font-family: "consolas";
+    src: url("./fonts/CONSOLA.TTF");
 }
 
 body{
@@ -79,6 +84,16 @@ body{
     width: fit-content;
     height: fit-content;
     margin: 5px;
+}
+.code-box{
+    margin: 5px;
+    padding: 5px;
+    background-color: var(--command_block_bg);
+    border-radius: 5px;
+    font-family: "consolas";
+}
+.hidden-box{
+    display: none;
 }
 
 .blue-button{

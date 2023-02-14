@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>服务器首页</title>
+    <link rel="stylesheet" type="text/css" href="./newUnifiedUI.css">
+</head>
+<body>
+    <div class="header-box">服务器首页</div>
+    <div class="tip-box">
+        你可能需要口令才能访问这个网页里的内容。如果你不知道口令是什么，你需要去申请获取。
+        <div class="blue-button">
+            <a href="" class="button-link">获取口令</a>
+        </div>
+    </div>
+    <div class="scroll-box">
+        <div class="content-box">
+            <div class="content-box-middle">
+                <img src="./img/welcome.svg">
+                <h2>欢迎来到服务器首页！</h2>
+                你可以在这里查看到我们的服务器的新闻和信息。部分内容需要口令。
+            </div>
+        </div>
+        <div class="content-box">
+            <h2>基岩版服务器信息</h2>
+            我们基岩版服务器的基本信息，点击框内的查看信息以查看<br>
+            <ul>
+                <li><b>客户端：</b>基岩版</li>
+                <li><b>版本：</b>最新版</li>
+                <li><b>是否需要正版认证：</b>否</li>
+                <li><b>IP地址：</b></li>
+            </ul>
+            <div class="blue-button">
+                <a href="" class="button-link">前往服务器官网</a>
+            </div>
+            <div class="code-box">
+                <div id="bedrock-server-info-display"></div>
+                <div class="green-button">
+                    <a onclick="showDetailsOnClick('bedrock-server-info-display')" class="button-link">显示服务器信息</a>
+                </div>
+            </div>
+        </div>
+        <div class="content-box">
+            <div class="tip-box">此服务器处于测试阶段</div>
+            <h2>Java服务器信息</h2>
+            我们Java服务器的基本信息，点击框内的查看信息以查看<br>
+            <ul>
+                <li><b>客户端：</b>Java版</li>
+                <li><b>版本：</b>1.20（正在等待）</li>
+                <li><b>是否需要正版认证：</b>否</li>
+                <li><b>IP地址：</b></li>
+            </ul>
+            <div class="blue-button">
+                <a href="" class="button-link">前往服务器官网</a>
+            </div>
+            <div class="code-box">
+                <div id="java-server-info-display"></div>
+                <div class="green-button">
+                    <a onclick="showDetailsOnClick('java-server-info-display')" class="button-link">显示服务器信息</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="blue-button">
+        <img src="./img/message.svg" width="20px">
+        <a href="./contact.html" class="button-link">联系站长</a>
+    </div>
+    <div class="blue-button">
+        <img src="./img/upload.svg" width="20px">
+        <a href="./contact.html" class="button-link">申请上传资源</a>
+    </div>
+    <div class="gray-button">
+        <img src="./img/github.svg" width="20px">
+        <a href="https://github.com/kimsseTheWolf/fltm.github.io" class="button-link">前往GitHub编辑此页面</a>
+    </div>
+    <div class="gray-button">
+        <img src="./img/github.svg" width="20px">
+        <a href="https://github.com/kimsseTheWolf/fltm.github.io/deployments/activity_log?environment=github-pages" class="button-link">查看更新记录</a>
+    </div>
+    <script>
+        function showDetailsOnClick(elementIDname){
+            inputToken = window.prompt("请输入口令")
+            if (inputToken == "test"){
+                if (elementIDname == "bedrock-server-info-display"){
+                    document.getElementById(elementIDname).innerHTML = "fltm.playmc.fun"
+                }
+                else if (elementIDname == "java-server-info-display"){
+                    document.getElementById(elementIDname).innerHTML = "Server not creat yet..."
+                }
+                
+            }
+            else{
+                window.alert("你的口令不正确")
+            }
+        }
+    </script>
+</body>
+</html>
