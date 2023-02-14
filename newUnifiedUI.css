@@ -187,3 +187,36 @@ body{
 .link{
     color: dodgerblue;
 }
+
+.bluetag{
+    display: inline-block;
+    color: white;
+    background-color: var(--blue);
+    border-radius: 5px;
+    margin: 3px;
+    padding: 5px;
+}
+.greentag{
+    display: inline-block;
+    color: white;
+    background-color: var(--green);
+    border-radius: 5px;
+    margin: 3px;
+    padding: 5px;
+}
+.redtag{
+    display: inline-block;
+    color: white;
+    background-color: var(--red);
+    border-radius: 5px;
+    margin: 3px;
+    padding: 5px;
+}
+.graytag{
+    display: inline-block;
+    color: white;
+    background-color: var(--gray);
+    border-radius: 5px;
+    margin: 3px;
+    padding: 5px;
+}
